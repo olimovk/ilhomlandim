@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+/* 1rem 16px */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f8f9fa;
+  color: #1f2937;
+  background: linear-gradient(25deg, rgb(2, 8, 38), rgb(65, 163, 255));
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #020826;
+  color: white;
+}
+
+.navbar-left {
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.navbar-left img {
+  width: 150px;
+}
+
+.navbar-right a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1.2rem;
+  font-size: 0.95rem;
+}
+.navbar-right a:hover {
+  color: #0ea5e9;
+}
+.blog-button {
+  background-color: #1e293b;
+  border: none;
+  color: white;
+  padding: 0.4rem 0.9rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+.blog-button a {
+  margin: 0 auto;
+}
+
+/* main content */
+.main-content {
+  padding: 2.5rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1000px;
+  gap: 2.5rem;
+}
+
+/* hero image */
+.hero-image img {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* hero text */
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.subtitle {
+  margin: 0.5rem 0 1rem;
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+/* socials */
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+/* description */
+.description {
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.5px;
+  text-align: left;
+  font-family: Helvetica;
+  text-decoration: none;
+  color: #ffffff;
+  /* text-shadow: 0.2px 0.2px #2e9aff; */
+}
+.description:hover {
+  cursor: pointer;
+}
+.description a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.description a:hover {
+  color: #0ea5e9;
+}
+/* buttons */
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+.btn-dark {
+  position: relative;
+  height: 5px;
+  width: 400px;
+  padding: 0.7rem 1.5rem;
+  background: linear-gradient(135deg, #0f172a, #334155);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Hoverda gradient o‘zgaradi va biroz kattalashadi */
+.btn-dark:hover {
+  background: linear-gradient(135deg, #1e40af, #0ea5e9);
+  transform: scale(1.05);
+  box-shadow: 0 6px 25px rgba(14, 165, 233, 0.5);
+}
+
+/* Bosilganda porlash effekti */
+.btn-dark::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 200%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: skewX(-20deg);
+  transition: left 0.6s ease-in-out;
+}
+
+/* Click effekti */
+.btn-dark:active::after {
+  left: 125%;
+}
+
+/* Clickda yengil kichiklashib, puls effekti */
+.btn-dark:active {
+  transform: scale(0.95);
+  transition: transform 0.1s ease-in-out;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin-top: 100px;
+}
